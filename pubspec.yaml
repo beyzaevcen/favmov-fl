@@ -21,6 +21,15 @@ dependencies:
   iconsax: ^0.0.8
   flutter_screenutil: ^5.8.4
   font_awesome_flutter: ^10.3.0
+  firebase_auth: ^4.4.0
+  firebase_core: ^2.15.0
+  cloud_firestore: ^4.8.4
+  flutter_datetime_picker: ^1.5.1
+  flutter_easyloading: ^3.0.5
+  crypto: ^3.0.2
+  google_sign_in: ^6.1.0
+  sign_in_with_apple: ^4.3.0
+  flutter_quill: ^6.3.1
 
 
 dev_dependencies:

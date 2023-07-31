@@ -57,9 +57,7 @@ class RegisterPage extends StatelessWidget {
             height: 16.0,
           ),
           //const DateTimeWidget(text: "Date of Birth"),
-          const SizedBox(
-            height: 16.0,
-          ),
+
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15.0),
             child: TextFormField(
@@ -228,10 +226,12 @@ class RegisterPage extends StatelessWidget {
                     backgroundColor: CColors.mainColor,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    controller.signUp();
+                  },
                   child: const Text(
                     "Sign Up",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 20, color: Colors.white),
                   ),
                 ),
               )),
