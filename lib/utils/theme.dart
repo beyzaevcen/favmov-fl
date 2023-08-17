@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CColors {
-  static const mainColor = Color(0xff0078D4);
+  static const mainColor = Color.fromARGB(255, 184, 148, 224);
   static const white = Colors.white;
   static const textColor = Color(0xffCECECE);
   static const backgroundcolor = Color(0xff161616);
