@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 
 class MovieWidget extends StatelessWidget {
-  const MovieWidget({super.key});
+  String movieName;
+
+  MovieWidget({
+    Key? key,
+    required this.movieName,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Container(
+      child: Text(movieName),
+    );
   }
 }

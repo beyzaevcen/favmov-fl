@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CColors {
-  static const mainColor = Color.fromARGB(255, 184, 148, 224);
+  static const mainColor = Color(0xffD896FF);
+
   static const white = Colors.white;
   static const textColor = Color(0xffCECECE);
   static const backgroundcolor = Color(0xff161616);
@@ -15,7 +16,6 @@ class CColors {
   static const orange = Colors.orange;
   static const red = Colors.red;
   static const tagColor = Color(0xffD9D9D9);
-  static const logoRed = Color(0xffe75236);
   static const logoOrange = Color(0xffe68c35);
   static const logoYellow1 = Color(0xffdbae34);
   static const logoYellow2 = Color(0xffbece34);

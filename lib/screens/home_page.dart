@@ -27,10 +27,6 @@ class HomePage extends StatelessWidget {
               padding: const EdgeInsets.all(16),
               tabs: const [
                 GButton(icon: Icons.home, text: "Home"),
-                GButton(
-                  icon: Icons.star,
-                  text: "Recom",
-                ),
                 GButton(icon: Icons.person, text: "Profile"),
               ],
               onTabChange: (value) {
