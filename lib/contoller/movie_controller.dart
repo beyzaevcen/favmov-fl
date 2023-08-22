@@ -1,11 +1,9 @@
+import 'package:favmov_fl/models/movie_model.dart';
 import 'package:get/get.dart';
 
-import '../models/movie_model.dart';
 import '../services/api.dart';
 
-class MoviepageController extends GetxController {
-  final initialPage = 0.obs;
-
+class MovieController extends GetxController {
   final movies = <MovieModel>[].obs;
   @override
   void onInit() async {

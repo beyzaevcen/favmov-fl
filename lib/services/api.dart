@@ -1,24 +1,24 @@
 import 'package:dio/dio.dart';
+import 'package:favmov_fl/models/movie_model.dart';
 
 class Api {
   static Future<Dio> dioAuth() async {
     BaseOptions options = BaseOptions(
-      baseUrl: "http://192.168.1.108",
+      baseUrl: "http://192.168.1.144",
       // headers: {"Accept": "application/json"},
       responseType: ResponseType.json,
     );
     return Dio(options);
   }
-  /*
 
-  static Future<List<PollModel>?> getAllPoll() async {
+  static Future<List<MovieModel>?> getAllMovies() async {
     try {
       Dio dio = await Api.dioAuth();
-      Response response = await dio.get("/poll/all");
+      Response response = await dio.get("/movies");
 
       if (response.statusCode == 200) {
         List<dynamic> items = response.data;
-        return items.map((e) => PollModel.fromMap(e)).toList();
+        return items.map((e) => MovieModel.fromMap(e)).toList();
       }
 
       return null;
@@ -26,6 +26,7 @@ class Api {
       return null;
     }
   }
+  /*
 
   static Future<PollModel?> addPoll(CreatePoll poll) async {
     try {
