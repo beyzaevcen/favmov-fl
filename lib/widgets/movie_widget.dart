@@ -14,11 +14,13 @@ class MovieWidget extends StatelessWidget {
       height: 200,
       width: 170,
       decoration: BoxDecoration(
-          image: DecorationImage(image: NetworkImage(movieModel.imageUrl.toString())),
+
+          //image: DecorationImage(image: NetworkImage(movieModel.imageUrl)),
           border: Border.all(
-            width: 1,
-            color: CColors.mainColor,
-          )),
+        width: 1,
+        color: CColors.mainColor,
+      )),
+      child: Text(movieModel.title),
     );
   }
 }

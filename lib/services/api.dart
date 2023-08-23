@@ -4,7 +4,7 @@ import 'package:favmov_fl/models/movie_model.dart';
 class Api {
   static Future<Dio> dioAuth() async {
     BaseOptions options = BaseOptions(
-      baseUrl: "http://192.168.1.144",
+      baseUrl: "http://127.0.0.1:7770",
       // headers: {"Accept": "application/json"},
       responseType: ResponseType.json,
     );

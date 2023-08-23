@@ -4,7 +4,7 @@ class MovieModel {
   final String title;
   final String description;
   final String imageUrl;
-  final String score;
+  final int score;
   MovieModel({
     required this.title,
     required this.description,
@@ -16,7 +16,7 @@ class MovieModel {
     String? title,
     String? description,
     String? imageUrl,
-    String? score,
+    int? score,
   }) {
     return MovieModel(
       title: title ?? this.title,
@@ -42,7 +42,7 @@ class MovieModel {
       title: map['title'] ?? '',
       description: map['description'] ?? '',
       imageUrl: map['imageUrl'] ?? '',
-      score: map['score'] ?? '',
+      score: map['score']?.toInt() ?? 0,
     );
   }
 

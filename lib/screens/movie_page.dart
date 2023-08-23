@@ -1,4 +1,5 @@
 import 'package:favmov_fl/contoller/moviepage_controller.dart';
+import 'package:favmov_fl/models/movie_model.dart';
 import 'package:favmov_fl/widgets/movie_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -39,9 +40,16 @@ class MoviePage extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              MovieWidget(
-                movieModel: controller.movies.first,
-              ),
+              ...controller.movies
+                  .asMap()
+                  .entries
+                  .map((e) => MovieWidget(
+                      movieModel: MovieModel(
+                          title: e.value.title,
+                          description: e.value.description,
+                          imageUrl: e.value.imageUrl,
+                          score: e.value.score)))
+                  .toList(),
             ],
           ),
         ),
