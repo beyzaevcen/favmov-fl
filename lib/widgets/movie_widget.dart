@@ -12,14 +12,15 @@ class MovieWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 200,
-      width: 170,
+      width: 100,
       decoration: BoxDecoration(
-
-          //image: DecorationImage(image: NetworkImage(movieModel.imageUrl)),
+          image: const DecorationImage(
+              image: NetworkImage(
+                  "https://upload.wikimedia.org/wikipedia/en/0/0b/Barbie_2023_poster.jpg")),
           border: Border.all(
-        width: 1,
-        color: CColors.mainColor,
-      )),
+            width: 1,
+            color: CColors.white,
+          )),
       child: Text(movieModel.title),
     );
   }

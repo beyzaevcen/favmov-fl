@@ -33,23 +33,16 @@ class MoviePage extends StatelessWidget {
                 height: 10,
               ),
               const Divider(
-                thickness: BorderSide.strokeAlignCenter,
-                height: 15,
-                color: CColors.white,
-              ),
+                  thickness: BorderSide.strokeAlignCenter, height: 15, color: CColors.white),
               const SizedBox(
                 height: 30,
               ),
-              ...controller.movies
-                  .asMap()
-                  .entries
-                  .map((e) => MovieWidget(
-                      movieModel: MovieModel(
-                          title: e.value.title,
-                          description: e.value.description,
-                          imageUrl: e.value.imageUrl,
-                          score: e.value.score)))
-                  .toList(),
+              ...controller.movies.asMap().entries.map((e) => MovieWidget(
+                  movieModel: MovieModel(
+                      title: e.value.title,
+                      description: e.value.description,
+                      imageUrl: e.value.imageUrl,
+                      score: e.value.score)))
             ],
           ),
         ),
